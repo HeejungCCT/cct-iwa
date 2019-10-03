@@ -1,11 +1,36 @@
-
-Jones, Fred
-    home: (512) 555-3301
-    work: (512) 555-2212
-Reynolds, Biff
-    home: (512) 555-2222
-    Birthday: July 31st
-Smith, Bill
-    home: (512) 555-2323
-    cell: (512) 555-2231
-    Contractor
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type='text/css' href='tut1.css'?>
+<phonebook>
+    <person id="1">
+        <surname>Jones</surname>
+        <name>Fred</name>
+        <tel>
+            <home>(512) 555-3301</home>
+            <work>(512) 555-2212</work>
+            <cell></cell>
+        </tel>
+        <birthday></birthday>
+        <employment></employment>
+    </person>
+    <person id="2">
+        <surname>Reynolds</surname>
+        <name>Biff</name>
+        <tel>
+            <home>(512) 555-2222</home>
+            <work></work>
+            <cell></cell>
+        </tel>
+        <birthday>July 31st</birthday>
+        <employment></employment>
+    </person>
+    <person id="3">
+        <surname>Smith</surname>
+        <name>Bill</name>
+        <tel>
+            <home>(512) 555-2323</home>
+            <work></work>
+            <cell>(512) 555-2231</cell>
+        </tel>
+        <employment>Contractor</employment>
+    </person>
+</phonebook>
