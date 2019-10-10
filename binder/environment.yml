@@ -6,4 +6,3 @@ dependencies:
   - pip:
     - jupyter-contrib-nbextensions
     - display_xml
-	- hide_code
