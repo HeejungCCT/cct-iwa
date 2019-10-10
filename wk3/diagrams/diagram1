@@ -1,0 +1,22 @@
+blockdiag {
+  default_fontsize = 20;
+  node_width = 200;
+  class attribute [style = dashed];
+  class text [style = dotted];
+  orientation = portrait;
+  name [class = "attribute"];
+  name2 [class = "attribute"];
+  theCourse [class = "attribute"];
+  75 [class = "text"];
+  name2 [label = "name"];
+  mark2 [label = "MARK"];
+  takenBy [class = "attribute"];
+  ASSESMENTS -> STUDENT -> MARK  [label = "element"];
+  ASSESMENTS -> COURSE -> mark2 [label = "element"];
+  COURSE -> name2 [label = "attribute"];
+  COURSE -> takenBy [label = "attribute"];
+  COURSE -> mark2 [label = "element"];
+  STUDENT -> name [label = "attribute"];
+  MARK -> 75 [label = "text"];
+  MARK -> theCourse [label = "attribute"];
+}
