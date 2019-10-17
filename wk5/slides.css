@@ -77,12 +77,16 @@ section.has-light-background, section.has-light-background h1, section.has-light
     position: absolute;
     top: 38px;
     right: 25px;
-	max-width: 20%;
-	height: auto;}
+	width: 250px;
+	height: auto;
+	opacity: 1;}
     @media (max-width: 840px) {
       .logo {
-        top: 15px;
-		right: 15px;} }
+        top: 20px;
+		right: 15px;
+		width: 200px;
+		height: auto;
+		} }
 
 .reveal.has-dark-background .line {
   display: none; }

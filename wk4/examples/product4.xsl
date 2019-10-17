@@ -17,8 +17,7 @@
             <xsl:apply-templates select="product_id"/>
             <xsl:value-of select="short_desc"/>
             <br/><xsl:apply-templates select="inventory[@color and @location='warehouse']"/>
-            <p><xsl:value-of select="price[@pricetype='sale'] | 
-            			     price[@pricetype!='cost']"/></p>
+            <p><xsl:value-of select="price[@pricetype='sale'] | price[@pricetype!='cost']"/></p>
             
         </li></ul>
     </xsl:template>
