@@ -1,8 +1,0 @@
-channels:
-  - conda-forge
-dependencies:
-  - python
-  - rise
-  - pip:
-    - jupyter-contrib-nbextensions
-    - display_xml
