@@ -3,29 +3,6 @@
     <!-- this XSL stylesheet matches the <JavacoTea> tag in an associated XML
 	file and replaces it with the HTML contents of the template. -->
     <xsl:template match="/">
-        <html>
-            <head>
-                <title>Paddy's Cafe Menu</title>
-                <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-                <link href="css/PaddysCafeStyles.css" rel="stylesheet" type="text/css" />
-                <!-- Include the JavaScript code for processing the XML data -->
-                <script src="js/PaddysCafeCode.js"></script>
-                <script>
-			        window.addEventListener("load", function() {
-			            document.forms[0].txtBillAmt.value = calculateBill('menuTable');
-			            document.querySelector("#calcBill").addEventListener("click", function() {
-			                document.forms[0].txtBillAmt.value = calculateBill('menuTable');
-			            });
-			            document.querySelector("#showVeg").addEventListener("click", function() {
-			                highlightVegetarian('menuTable', this.checked);
-			            });
-			        });
-			    </script>
-            </head>
-            <body>
-                <h2>
-                    <img src="img/javaco_tea_logo.gif" alt="Javaco Tea Logo" width="58" height="100" />Welcome to Paddy's Cafe</h2>
-                <p>Select your entrees from the menu below. To calculate the amount of the bill, click the Calculate Bill button. Check the "Highlight Vegetarian Meals" box to highlight vegetarian dishes.</p>
                 <table id="menuTable" border="1" class="indent">
                     <thead>
                         <tr>
@@ -63,13 +40,5 @@
                         </xsl:for-each>
                     </tbody>
                 </table>
-                <form class="indent">
-                    <p>
-                        <input type="button" name="btnCalcBill" value="Calculate Bill" id="calcBill" />
-				Total: EUR
-				<input type="text" name="txtBillAmt" /><input type="checkbox" name="cbOpts" value="isVeg" id="showVeg" /><label for="showVeg">Highlight Vegetarian Meals</label></p>
-                </form>
-            </body>
-        </html>
     </xsl:template>
 </xsl:stylesheet>
