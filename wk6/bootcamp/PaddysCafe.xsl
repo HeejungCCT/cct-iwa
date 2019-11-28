@@ -7,9 +7,9 @@
             <head>
                 <title>Paddy's Cafe Menu</title>
                 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-                <link href="PaddysCafeStyles.css" rel="stylesheet" type="text/css" />
+                <link href="css/PaddysCafeStyles.css" rel="stylesheet" type="text/css" />
                 <!-- Include the JavaScript code for processing the XML data -->
-                <script src="PaddysCafeCode.js"></script>
+                <script src="js/PaddysCafeCode.js"></script>
                 <script>
 			        window.addEventListener("load", function() {
 			            document.forms[0].txtBillAmt.value = calculateBill('menuTable');
@@ -24,7 +24,7 @@
             </head>
             <body>
                 <h2>
-                    <img src="javaco_tea_logo.gif" alt="Javaco Tea Logo" width="58" height="100" />Welcome to Paddy's Cafe</h2>
+                    <img src="img/javaco_tea_logo.gif" alt="Javaco Tea Logo" width="58" height="100" />Welcome to Paddy's Cafe</h2>
                 <p>Select your entrees from the menu below. To calculate the amount of the bill, click the Calculate Bill button. Check the "Highlight Vegetarian Meals" box to highlight vegetarian dishes.</p>
                 <table id="menuTable" border="1" class="indent">
                     <thead>
@@ -66,7 +66,7 @@
                 <form class="indent">
                     <p>
                         <input type="button" name="btnCalcBill" value="Calculate Bill" id="calcBill" />
-				Total: €
+				Total: EUR
 				<input type="text" name="txtBillAmt" /><input type="checkbox" name="cbOpts" value="isVeg" id="showVeg" /><label for="showVeg">Highlight Vegetarian Meals</label></p>
                 </form>
             </body>
